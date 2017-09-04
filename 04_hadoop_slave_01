@@ -1,0 +1,7 @@
+FROM hadoop_slave_common:latest
+
+RUN apt-fast install -y hadoop-hdfs-secondarynamenode
+
+ADD docker-entrypoint-slaves.sh /
+
+ENTRYPOINT ["/docker-entrypoint-slaves.sh"]

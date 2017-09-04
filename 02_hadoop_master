@@ -1,0 +1,23 @@
+FROM hadoop_repo:latest
+
+RUN apt-fast install -y hadoop-yarn-resourcemanager hadoop-hdfs-namenode hadoop-mapreduce-historyserver hadoop-yarn-proxyserver
+
+RUN cp -r /etc/hadoop/conf.empty /etc/hadoop/conf.cdh5
+
+ADD conf.cdh5 /etc/hadoop/conf.cdh5/
+
+RUN update-alternatives --install /etc/hadoop/conf hadoop-conf /etc/hadoop/conf.cdh5 50
+
+RUN update-alternatives --set hadoop-conf /etc/hadoop/conf.cdh5
+
+ADD bigtop-detect-javahome /usr/lib/bigtop-utils/bigtop-detect-javahome
+
+RUN mkdir -p /data/1/dfs/nn
+
+RUN hdfs namenode -format
+
+RUN chown hdfs:hdfs -R /data/1/dfs/nn && chmod 700 /data/1/dfs/nn
+
+ADD docker-entrypoint-master.sh /
+
+ENTRYPOINT ["/docker-entrypoint-master.sh"]

@@ -1,0 +1,5 @@
+FROM hadoop_slave_common:latest
+
+ADD docker-entrypoint-slaves.sh /
+
+ENTRYPOINT ["/docker-entrypoint-slaves.sh"]

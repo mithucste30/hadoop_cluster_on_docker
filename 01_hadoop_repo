@@ -1,0 +1,25 @@
+FROM java:8u111-jdk
+
+ADD archive.key .
+
+RUN apt-key add archive.key
+
+ADD sources.list /etc/apt/sources.list
+
+ADD cloudera.list /etc/apt/sources.list.d/cloudera.list
+
+ADD cloudera.pref /etc/apt/preferences.d/cloudera.pref
+
+ADD apt-fast /usr/bin/
+
+RUN chmod +x /usr/bin/apt-fast
+
+ADD apt-fast.conf /etc/
+
+RUN apt-get update
+
+RUN apt-get -y install aria2
+
+RUN apt-fast install -y hadoop hadoop-hdfs hadoop-mapreduce hadoop-yarn hadoop-client
+
+

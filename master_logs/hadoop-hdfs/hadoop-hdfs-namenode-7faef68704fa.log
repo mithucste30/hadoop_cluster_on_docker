@@ -1,0 +1,64 @@
+2017-09-04 07:17:41,311 INFO org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2017-09-04 07:17:41,465 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2017-09-04 07:17:41,466 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system started
+2017-09-04 07:17:41,803 INFO org.apache.hadoop.util.JvmPauseMonitor: Starting JVM pause monitor
+2017-09-04 07:17:41,817 INFO org.apache.hadoop.hdfs.DFSUtil: Starting Web-server for hdfs at: http://master:50070
+2017-09-04 07:17:41,934 INFO org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.namenode is not defined
+2017-09-04 07:17:41,961 INFO org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2017-09-04 07:17:41,967 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context hdfs
+2017-09-04 07:17:41,967 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+2017-09-04 07:17:41,968 INFO org.apache.hadoop.http.HttpServer2: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context logs
+2017-09-04 07:17:42,393 INFO org.apache.hadoop.http.HttpServer2: Added filter 'org.apache.hadoop.hdfs.web.AuthFilter' (class=org.apache.hadoop.hdfs.web.AuthFilter)
+2017-09-04 07:17:42,395 INFO org.apache.hadoop.http.HttpServer2: addJerseyResourcePackage: packageName=org.apache.hadoop.hdfs.server.namenode.web.resources;org.apache.hadoop.hdfs.web.resources, pathSpec=/webhdfs/v1/*
+2017-09-04 07:17:42,422 INFO org.apache.hadoop.http.HttpServer2: Jetty bound to port 50070
+2017-09-04 07:17:42,978 WARN org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Only one image storage directory (dfs.namenode.name.dir) configured. Beware of data loss due to lack of redundant storage directories!
+2017-09-04 07:17:42,979 WARN org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Only one namespace edits storage directory (dfs.namenode.edits.dir) configured. Beware of data loss due to lack of redundant storage directories!
+2017-09-04 07:17:43,014 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Edit logging is async:false
+2017-09-04 07:17:43,022 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: No KeyProvider found.
+2017-09-04 07:17:43,030 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsLock is fair: true
+2017-09-04 07:17:43,138 INFO org.apache.hadoop.util.GSet: Computing capacity for map BlocksMap
+2017-09-04 07:17:43,138 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2017-09-04 07:17:43,140 INFO org.apache.hadoop.util.GSet: 2.0% max memory 889 MB = 17.8 MB
+2017-09-04 07:17:43,140 INFO org.apache.hadoop.util.GSet: capacity      = 2^21 = 2097152 entries
+2017-09-04 07:17:43,190 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner             = hdfs (auth:SIMPLE)
+2017-09-04 07:17:43,198 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup          = hadoop
+2017-09-04 07:17:43,198 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled = true
+2017-09-04 07:17:43,198 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: HA Enabled: false
+2017-09-04 07:17:43,200 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Append Enabled: true
+2017-09-04 07:17:43,347 INFO org.apache.hadoop.util.GSet: Computing capacity for map INodeMap
+2017-09-04 07:17:43,354 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2017-09-04 07:17:43,354 INFO org.apache.hadoop.util.GSet: 1.0% max memory 889 MB = 8.9 MB
+2017-09-04 07:17:43,354 INFO org.apache.hadoop.util.GSet: capacity      = 2^20 = 1048576 entries
+2017-09-04 07:17:43,369 INFO org.apache.hadoop.util.GSet: Computing capacity for map cachedBlocks
+2017-09-04 07:17:43,373 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2017-09-04 07:17:43,378 INFO org.apache.hadoop.util.GSet: 0.25% max memory 889 MB = 2.2 MB
+2017-09-04 07:17:43,378 INFO org.apache.hadoop.util.GSet: capacity      = 2^18 = 262144 entries
+2017-09-04 07:17:43,380 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2017-09-04 07:17:43,380 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+2017-09-04 07:17:43,380 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+2017-09-04 07:17:43,392 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Retry cache on namenode is enabled
+2017-09-04 07:17:43,392 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2017-09-04 07:17:43,396 INFO org.apache.hadoop.util.GSet: Computing capacity for map NameNodeRetryCache
+2017-09-04 07:17:43,398 INFO org.apache.hadoop.util.GSet: VM type       = 64-bit
+2017-09-04 07:17:43,398 INFO org.apache.hadoop.util.GSet: 0.029999999329447746% max memory 889 MB = 273.1 KB
+2017-09-04 07:17:43,398 INFO org.apache.hadoop.util.GSet: capacity      = 2^15 = 32768 entries
+2017-09-04 07:17:43,405 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: ACLs enabled? false
+2017-09-04 07:17:43,405 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: XAttrs enabled? true
+2017-09-04 07:17:43,405 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Maximum size of an xattr: 16384
+2017-09-04 07:17:43,415 WARN org.apache.hadoop.hdfs.server.common.Storage: Cannot access storage directory /data/1/dfs/nn
+2017-09-04 07:17:43,419 WARN org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Encountered exception loading fsimage
+org.apache.hadoop.hdfs.server.common.InconsistentFSStateException: Directory /data/1/dfs/nn is in an inconsistent state: storage directory does not exist or is not accessible.
+	at org.apache.hadoop.hdfs.server.namenode.FSImage.recoverStorageDirs(FSImage.java:371)
+	at org.apache.hadoop.hdfs.server.namenode.FSImage.recoverTransitionRead(FSImage.java:222)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.loadFSImage(FSNamesystem.java:1125)
+	at org.apache.hadoop.hdfs.server.namenode.FSNamesystem.loadFromDisk(FSNamesystem.java:789)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.loadNamesystem(NameNode.java:614)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.initialize(NameNode.java:676)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:844)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.<init>(NameNode.java:823)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.createNameNode(NameNode.java:1547)
+	at org.apache.hadoop.hdfs.server.namenode.NameNode.main(NameNode.java:1615)
+2017-09-04 07:17:43,539 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping NameNode metrics system...
+2017-09-04 07:17:43,540 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system stopped.
+2017-09-04 07:17:43,540 INFO org.apache.hadoop.metrics2.impl.MetricsSystemImpl: NameNode metrics system shutdown complete.
+2017-09-04 07:17:43,543 INFO org.apache.hadoop.util.ExitUtil: Exiting with status 1

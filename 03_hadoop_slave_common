@@ -1,0 +1,16 @@
+FROM jessie_jdk_cloudera_repo:latest
+
+RUN apt-fast install -y hadoop-yarn-nodemanager hadoop-hdfs-datanode
+
+RUN cp -r /etc/hadoop/conf.empty /etc/hadoop/conf.cdh5
+
+ADD conf.cdh5 /etc/hadoop/conf.cdh5/
+
+RUN update-alternatives --install /etc/hadoop/conf hadoop-conf /etc/hadoop/conf.cdh5 50
+
+RUN update-alternatives --set hadoop-conf /etc/hadoop/conf.cdh5
+
+RUN mkdir -p /data/1/dfs/dn
+
+RUN chown -R hdfs:hdfs /data/1/dfs/dn
+

@@ -1,0 +1,3 @@
+deb http://ftp.sg.debian.org/debian jessie main
+deb http://ftp.sg.debian.org/debian jessie-updates main
+deb http://security.debian.org jessie/updates main
