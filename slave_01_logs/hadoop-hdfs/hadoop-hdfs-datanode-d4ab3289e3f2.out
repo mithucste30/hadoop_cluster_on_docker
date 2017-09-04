@@ -1,8 +1,0 @@
-[main] INFO org.apache.hadoop.hdfs.server.datanode.BlockScanner - Initialized block scanner with targetBytesPerSec 1048576
-[main] INFO org.mortbay.log - Logging to org.slf4j.impl.SimpleLogger(org.mortbay.log) via org.mortbay.log.Slf4jLog
-[main] INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
-[main] INFO org.mortbay.log - jetty-6.1.26.cloudera.4
-[main] INFO org.mortbay.log - Started HttpServer2$SelectChannelConnectorWithSafeStartup@localhost:46433
-[VolumeScannerThread(/data/1/dfs/dn)] INFO org.apache.hadoop.hdfs.server.datanode.VolumeScanner - Now scanning bpid BP-129311850-172.17.0.2-1504452143662 on volume /data/1/dfs/dn
-[VolumeScannerThread(/data/1/dfs/dn)] INFO org.apache.hadoop.hdfs.server.datanode.VolumeScanner - VolumeScanner(/data/1/dfs/dn, DS-8e82dd13-284f-4ee5-bbf0-14d35e271aa1): finished scanning block pool BP-129311850-172.17.0.2-1504452143662
-[VolumeScannerThread(/data/1/dfs/dn)] INFO org.apache.hadoop.hdfs.server.datanode.VolumeScanner - VolumeScanner(/data/1/dfs/dn, DS-8e82dd13-284f-4ee5-bbf0-14d35e271aa1): no suitable block pools found to scan.  Waiting 1814399916 ms.

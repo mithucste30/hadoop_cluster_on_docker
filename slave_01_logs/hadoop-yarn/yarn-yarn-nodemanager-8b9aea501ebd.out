@@ -1,7 +1,0 @@
-[main] INFO org.mortbay.log - Logging to org.slf4j.impl.SimpleLogger(org.mortbay.log) via org.mortbay.log.Slf4jLog
-[main] INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
-[main] INFO org.mortbay.log - jetty-6.1.26.cloudera.4
-[main] INFO org.mortbay.log - Extract jar:file:/usr/lib/hadoop-yarn/hadoop-yarn-common-2.6.0-cdh5.12.1.jar!/webapps/node to /tmp/Jetty_0_0_0_0_8042_node____19tj0x/webapp
-[main] INFO org.mortbay.log - Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:8042
-[main] INFO org.apache.hadoop.yarn.webapp.WebApps - Web app /node started at 8042
-[main] INFO org.apache.hadoop.yarn.webapp.WebApps - Registered webapp guice modules

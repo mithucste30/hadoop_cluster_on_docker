@@ -1,9 +1,0 @@
-[main] INFO org.apache.hadoop.hdfs.server.datanode.BlockScanner - Initialized block scanner with targetBytesPerSec 1048576
-[main] INFO org.mortbay.log - Logging to org.slf4j.impl.SimpleLogger(org.mortbay.log) via org.mortbay.log.Slf4jLog
-[main] INFO org.apache.hadoop.security.authentication.server.AuthenticationFilter - Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
-[main] INFO org.mortbay.log - jetty-6.1.26.cloudera.4
-[main] INFO org.mortbay.log - Started HttpServer2$SelectChannelConnectorWithSafeStartup@localhost:34771
- (seconds, -t) unlimited
-max user processes              (-u) 65536
-virtual memory          (kbytes, -v) unlimited
-file locks                      (-x) unlimited
