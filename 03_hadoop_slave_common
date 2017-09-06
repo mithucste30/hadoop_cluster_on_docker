@@ -1,4 +1,4 @@
-FROM jessie_jdk_cloudera_repo:latest
+FROM hadoop_repo:latest
 
 RUN apt-fast install -y hadoop-yarn-nodemanager hadoop-hdfs-datanode
 

@@ -2,22 +2,16 @@ version: '2'
 services:
   master:
     image: hadoop_master
-  volumes:
-     - $PWD/slave_01_logs/:/var/log
   slave1:
-   image: hadoop_slave_01
-   volumes:
-     - $PWD/slave_01_logs/:/var/log
-   links:
+    image: hadoop_slave_01
+    links:
      - master
-   depends_on:
+    depends_on:
      - master
 
   slave2:
-   image: hadoop_slave_02
-   volumes:
-     - $PWD/slave_02_logs/:/var/log
-   links:
+    image: hadoop_slave_02
+    links:
      - master
-   depends_on:
+    depends_on:
      - slave1

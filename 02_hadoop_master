@@ -20,4 +20,6 @@ RUN chown hdfs:hdfs -R /data/1/dfs/nn && chmod 700 /data/1/dfs/nn
 
 ADD docker-entrypoint-master.sh /
 
+RUN chmod +x /docker-entrypoint-master.sh
+
 ENTRYPOINT ["/docker-entrypoint-master.sh"]
