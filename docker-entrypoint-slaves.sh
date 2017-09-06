@@ -9,3 +9,5 @@ chown yarn:yarn -R /data/1/yarn/logs
 
 service hadoop-yarn-nodemanager restart
 
+tail -f /dev/null
+
