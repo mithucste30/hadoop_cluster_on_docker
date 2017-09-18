@@ -1,4 +1,4 @@
-FROM hadoop_repo:latest
+FROM mithucste30/hadoop_core:latest
 
 RUN apt-fast install -y hadoop-yarn-resourcemanager hadoop-hdfs-namenode hadoop-mapreduce-historyserver hadoop-yarn-proxyserver
 

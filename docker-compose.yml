@@ -1,17 +1,25 @@
 version: '2'
 services:
-  master:
-    image: hadoop_master
-  slave1:
-    image: hadoop_slave_01
-    links:
-     - master
-    depends_on:
-     - master
+  namenode:
+    image: mithucste30/hadoop_namenode
+    volumes:
+      - $PWD/conf.cdh5:/etc/hadoop/conf.cdh5
+    hostname: master
 
-  slave2:
-    image: hadoop_slave_02
+  secondary_namenode:
+    image: mithucste30/hadoop_secondary_namenode
     links:
-     - master
+      - namenode:master
     depends_on:
-     - slave1
+      - namenode
+    volumes:
+      - $PWD/conf.cdh5:/etc/hadoop/conf.cdh5
+
+  data_node:
+    image: mithucste30/hadoop_datanode
+    links:
+      - namenode:master
+    depends_on:
+      - secondary_namenode
+    volumes:
+      - $PWD/conf.cdh5:/etc/hadoop/conf.cdh5

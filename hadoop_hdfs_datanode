@@ -1,4 +1,4 @@
-FROM hadoop_repo:latest
+FROM mithucste30/hadoop_core:latest
 
 RUN apt-fast install -y hadoop-yarn-nodemanager hadoop-hdfs-datanode
 

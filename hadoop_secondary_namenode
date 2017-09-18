@@ -1,4 +1,4 @@
-FROM hadoop_slave_common:latest
+FROM mithucste30/hadoop_hdfs_datanode:latest
 
 RUN apt-fast install -y hadoop-hdfs-secondarynamenode
 
